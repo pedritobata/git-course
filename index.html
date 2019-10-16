@@ -38,5 +38,15 @@
     es preferible hacer primero merge hacia un branch diferente del master y luego
     ya se hace el merge al revez, osea hacia el master
 
+  git checkout -- <file>  , para descartar cambios en un archivo especifico
+  git reset --hard HEAD , descarta todos los cambios que se hayan hecho en todos los archivos y 
+     regresa al ultimo commit vigente
+
+  git reset --hard <id del commit> ,  parecido al anterior pero con la diferencia es que se regresa al commit
+      que le digamos y todo lo que esté despues de ese commit SE PIERDE PARA SIEMPRE
+
+  git revert <id del commit> , revierte solo los cambios que se hayan hecho en el commit especificado, todo lo que
+      esté despues de ese commit se MANTIENE
+
    
 -->
